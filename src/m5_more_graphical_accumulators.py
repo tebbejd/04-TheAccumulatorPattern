@@ -230,7 +230,7 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
         circle.fill_color = rectangle.fill_color
         circle.attach_to(window)
         center = rg.Point((circle.center.x - radius * 2), circle.center.y)
-    center = rg.Point((rectangle.get_center().x - rectangle.get_width()), rectangle.get_center().y)
+    center = rg.Point((rectangle.get_center().x ), rectangle.get_upper_left_corner().y - rectangle.get_width()/2)
     radius = rectangle.get_width() / 2
     for k in range(n):
         circle = rg.Circle(center, radius)
