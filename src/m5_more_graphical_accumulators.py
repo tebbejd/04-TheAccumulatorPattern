@@ -148,20 +148,20 @@ def run_test_draw_circles_from_rectangle():
     rectangle = rg.Rectangle(rg.Point(1100, 350), rg.Point(1200, 600))
     rectangle.fill_color = 'blue'
     rectangle.outline_color = 'blue'
-    draw_circles_from_rectangle(3, 5, rectangle, window1)
+    draw_circles_from_rectangle(3, 2, rectangle, window1)
 
     # Test 2:
     rectangle = rg.Rectangle(rg.Point(950, 250), rg.Point(1000, 430))
     rectangle.fill_color = 'pink'
     rectangle.outline_color = 'pink'
-    draw_circles_from_rectangle(4, 6, rectangle, window1)
+    draw_circles_from_rectangle(4, 3, rectangle, window1)
     window1.close_on_mouse_click()
 
     title = 'Test 3 of DRAW_CIRCLES_FROM_RECTANGLE: '
     window2 = rg.RoseWindow(750, 500, title)
 
     # Test 3:
-    rectangle = rg.Rectangle(rg.Point(350, 300), rg.Point(500, 450))
+    rectangle = rg.Rectangle(rg.Point(350, 350), rg.Point(500, 450))
     rectangle.fill_color = 'green'
     rectangle.outline_color = 'green'
     draw_circles_from_rectangle(1, 2, rectangle, window2)
